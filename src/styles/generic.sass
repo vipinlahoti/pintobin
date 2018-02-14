@@ -1,0 +1,193 @@
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6
+  margin: 0
+  padding: 0
+
+// Headings
+h1, h2, h3, h4, h5, h6
+  font-size: 100%
+  font-weight: normal
+
+// List
+ul
+  list-style: none
+
+li
+  line-height: 1.2
+  margin-bottom: 0.75rem
+
+*
+  box-sizing: inherit
+  &:before,
+  &:after
+    box-sizing: inherit
+
+html
+  background-color: $white
+  box-sizing: border-box
+  font-size: $body-size
+  -moz-osx-font-smoothing: grayscale
+  -webkit-font-smoothing: antialiased
+  min-width: 300px
+  overflow-x: hidden
+  overflow-y: scroll
+  text-rendering: optimizeLegibility
+  text-size-adjust: 100%
+
+footer,
+header,
+section
+  display: block
+
+body
+  color: $body-color
+  font-family: $body-family
+  font-size: 1.35rem
+  font-weight: $weight-normal
+  line-height: $body-line-height
+
+
+// Inline
+a
+  color: $body-color
+  cursor: pointer
+  text-decoration: none
+  strong
+    color: currentColor
+  &:hover
+    color: $body-color
+
+img
+  height: auto
+  max-width: 100%
+
+small
+  font-size: 0.875em
+
+span
+  font-style: inherit
+  font-weight: inherit
+
+strong
+  color: $body-color
+  font-weight: $weight-bold
+
+.title,
+.subtitle
+  font-family: $heading-family;
+  +block
+  word-break: break-word
+
+.title
+  color: $body-color
+  font-size: $title-size
+  font-weight: $title-weight
+  line-height: 1.15
+  strong
+    color: $body-color
+    font-weight: $title-strong-weight
+  &:not(.is-spaced) + .subtitle
+    margin-top: -1.5rem
+  // Sizes
+  @each $size in $sizes
+    $i: index($sizes, $size)
+    &.is-#{$i}
+      font-size: $size
+
+.subtitle
+  color: $body-color
+  font-size: $subtitle-size
+  font-weight: $subtitle-weight
+  line-height: 1.25
+  strong
+    color: $body-color
+    font-weight: $subtitle-strong-weight
+  &:not(.is-spaced) + .title
+    margin-top: -1.5rem
+  // Sizes
+  @each $size in $sizes
+    $i: index($sizes, $size)
+    &.is-#{$i}
+      font-size: $size
+
+.box
+  background: #fff
+  color: $card-color
+  max-width: 100%
+  position: relative
+  max-width: 80%;
+  box-shadow: 0 0 42px rgba(0, 0, 0, .15);
+  padding: 3rem;
+  margin: 5rem 0;
+  .media:not(:last-child)
+    margin-bottom: 0.75rem
+
+.navbar
+  min-height: $navbar-height
+  padding: 0 $navbar-height;
+  position: relative
+  &.is-fixed-top
+    top: 0
+
+.navbar-item
+  display: block
+  line-height: 1.5
+  padding: 0.5rem 0
+  position: relative
+
+.navbar-brand
+  align-items: stretch
+  display: flex
+  font-family: $logo-family
+  font-size: 2rem
+  flex-shrink: 0
+  min-height: $navbar-height
+
+.hero
+  align-items: stretch
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  // Sizes
+  &.is-halfheight
+    min-height: 50vh
+  &.is-fullheight
+    min-height: 100vh
+
+.hero-body
+  flex-grow: 1
+  flex-shrink: 0
+  padding: 3rem $navbar-height
+  height: 100vh
+  .hero-bg
+    background: url(http://aju.dk/images/_MG_8800a.jpg) no-repeat center center
+    height: 100vh
+    background-size: cover
+  .columns
+    height: 100%
+    width: 100%
+    align-items: center;
+    overflow: hidden;
+
+
+.section
+  padding: $section-padding
+  &.section-image-container
+    .section-image
+      position: absolute
+      top: 0
+      bottom: 0
+      left: -20rem
+      right: 0
+      max-width: 80%
+    .side-image
+      background: url(http://aju.dk/images/_MG_8601a.jpg) no-repeat center center
+      background-size: cover
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+footer
+  // background-color: $footer-background-color
+  font-size: 1rem

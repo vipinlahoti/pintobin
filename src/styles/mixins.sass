@@ -1,5 +1,18 @@
-@import "initial-variables"
+=navbar-fixed
+  left: 0
+  position: fixed
+  right: 0
+  z-index: $navbar-fixed-z
 
+=block
+  &:not(:last-child)
+    margin-bottom: 1.5rem
+
+=clearfix
+  &:after
+    clear: both
+    content: " "
+    display: table
 =arrow($color)
   border: 1px solid $color
   border-right: 0
