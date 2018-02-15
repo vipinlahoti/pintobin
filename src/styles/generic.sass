@@ -180,7 +180,7 @@ strong
   flex-shrink: 0
   height: 100vh
   .hero-bg
-    background: url(http://aju.dk/images/_MG_8800a.jpg) no-repeat center center
+    background: url(../images/slider-1.jpg) no-repeat center center
     height: 100vh
     background-size: cover
     filter: grayscale(100%);
@@ -201,6 +201,10 @@ strong
     padding: $section-padding-medium
   &.is-large
     padding: $section-padding-large
+  .section-dark
+    margin: 0
+    &:after
+      content: none
   &.section-image-container
     .section-image
       position: absolute
@@ -210,7 +214,7 @@ strong
       right: 0
       max-width: 80%
     .side-image
-      background: url(http://aju.dk/images/_MG_8601a.jpg) no-repeat center center
+      background: url(../images/slider-2.jpg) no-repeat center center
       background-size: cover
       filter: grayscale(100%);
       position: absolute;
@@ -244,7 +248,19 @@ footer
   padding-left: 0 !important
   padding-right: 0 !important
 
+.no-padding-b
+  padding-bottom: 0 !important
+
 .inline-list
   margin: 3rem 0 0
   display: flex;
   justify-content: space-between;
+
+.inline-image-list
+  margin-top: 3rem
+  li
+    display: inline-block
+    margin: 0 1.5rem
+  img
+    filter: grayscale(100%)
+    width: 80px
