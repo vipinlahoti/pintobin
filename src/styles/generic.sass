@@ -51,7 +51,7 @@ section
 body
   color: $body-color
   font-family: $body-family
-  font-size: 1.35rem
+  font-size: 1.25rem
   font-weight: $weight-normal
   line-height: $body-line-height
 
@@ -65,6 +65,7 @@ a
     color: currentColor
   &:hover
     color: $body-color
+    text-decoration: underline
 
 img
   height: auto
@@ -89,7 +90,6 @@ strong
 
 .title
   color: $body-color
-  font-weight: $title-weight
   line-height: 1.15
   strong
     color: $body-color
@@ -105,7 +105,6 @@ strong
 .subtitle
   color: $body-color
   font-size: $subtitle-size
-  font-weight: $subtitle-weight
   line-height: 1.25
   strong
     color: $body-color
@@ -148,8 +147,11 @@ strong
 .navbar-item
   display: block
   line-height: 1.5
-  padding: 0.5rem 0
   position: relative
+  text-align: center
+  font-weight: bold
+  &:hover
+    text-decoration: none
 
 .navbar-brand
   align-items: stretch
@@ -157,9 +159,33 @@ strong
   font-family: $logo-family
   font-size: 2rem
   flex-shrink: 0
-  min-height: $navbar-height
   .navbar-item
-    color: $white
+    color: $body-color
+    width: 30px
+    height: 50px
+    background: $white
+    position: relative
+    margin-top: 4rem
+    &:before
+      content: ""
+      position: absolute
+      top: 0
+      left: -12px
+      width: 0
+      height: 0
+      border-top: 25px solid transparent
+      border-right: 12px solid $white
+      border-bottom: 25px solid transparent
+    &:after
+      content: ""
+      position: absolute
+      bottom: 0
+      right: -12px
+      width: 0
+      height: 0
+      border-top: 25px solid transparent
+      border-left: 12px solid $white
+      border-bottom: 25px solid transparent
 
 .hero
   align-items: stretch
