@@ -74,10 +74,10 @@ const IndexPage = () => (
       </div>
     </section>
 
-    <section className="section is-large no-padding-b">
+    <section className="section section-list is-large no-padding-b">
       <div className="container">
         <div className="section-dark">
-          <h6 className="title">TECHNOLOGIES WE WORK WITH.</h6>
+          <h6 className="title">TECHNOLOGIES. WE WORK WITH.</h6>
           <div className="inline-image-list">
             <ul>
               <li><img src={gatsby} alt="Gatsby - PintoBin Techno Solutions" /></li>

@@ -15,7 +15,6 @@ li
   line-height: 1.2
   margin-bottom: 0.75rem
   ul
-    margin-left: 1.5rem
     li
       background: $body-color
       color: $white
@@ -160,8 +159,9 @@ strong
   font-size: 2rem
   flex-shrink: 0
   .navbar-item
+    box-shadow: 0 24px 62px rgba(0, 0, 0, 0.15)
     color: $body-color
-    width: 30px
+    width: 35px
     height: 50px
     background: $white
     position: relative
@@ -227,6 +227,10 @@ strong
     padding: $section-padding-medium
   &.is-large
     padding: $section-padding-large
+  &.section-list
+    .section-dark
+      padding-left: 1rem
+      padding-right: 1rem
   .section-dark
     margin: 0
     &:after
@@ -286,7 +290,7 @@ footer
   margin-top: 3rem
   li
     display: inline-block
-    margin: 0 1.5rem
+    margin: 0 1rem
   img
     filter: grayscale(100%)
     width: 80px
