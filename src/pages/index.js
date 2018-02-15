@@ -1,11 +1,12 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import angular from "../images/angular.png";
-import apollo from "../images/apollo.png";
-import graphql from "../images/graphql.png";
-import meteor from "../images/meteor.png";
-import nodejs from "../images/nodejs.png";
-import react from "../images/react.png";
+import angular from "../images/angular.png"
+import apollo from "../images/apollo.png"
+import graphql from "../images/graphql.png"
+import meteor from "../images/meteor.png"
+import nodejs from "../images/nodejs.png"
+import react from "../images/react.png"
+import gatsby from "../images/gatsby.png"
 
 const IndexPage = () => (
   <div>
@@ -79,12 +80,13 @@ const IndexPage = () => (
           <h6 className="title">TECHNOLOGIES WE WORK WITH.</h6>
           <div className="inline-image-list">
             <ul>
+              <li><img src={gatsby} alt="Gatsby - PintoBin Techno Solutions" /></li>
               <li><img src={angular} alt="Angular - PintoBin Techno Solutions" /></li>
-              <li><img src={react} alt="Angular - PintoBin Techno Solutions" /></li>
-              <li><img src={apollo} alt="Angular - PintoBin Techno Solutions" /></li>
-              <li><img src={graphql} alt="Angular - PintoBin Techno Solutions" /></li>
-              <li><img src={meteor} alt="Angular - PintoBin Techno Solutions" /></li>
-              <li><img src={nodejs} alt="Angular - PintoBin Techno Solutions" /></li>
+              <li><img src={react} alt="React - PintoBin Techno Solutions" /></li>
+              <li><img src={apollo} alt="Apollo GraphQL - PintoBin Techno Solutions" /></li>
+              <li><img src={graphql} alt="Graphql - PintoBin Techno Solutions" /></li>
+              <li><img src={meteor} alt="Meteor - PintoBin Techno Solutions" /></li>
+              <li><img src={nodejs} alt="NodeJs - PintoBin Techno Solutions" /></li>
             </ul>
           </div>
         </div>
