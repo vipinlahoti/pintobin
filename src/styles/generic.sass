@@ -123,9 +123,14 @@ strong
   color: $body-color
   max-width: 100%
   position: relative
-  box-shadow: 0 0 42px rgba(0, 0, 0, .15);
+  box-shadow: 0 24px 62px rgba(0, 0, 0, 0.15);
   padding: 3rem;
   margin: 5rem 0;
+  &.is-medium
+    display: flex
+    justify-content: flex-end
+    margin: 0
+    padding: 9rem
   .media:not(:last-child)
     margin-bottom: 0.75rem
 
@@ -192,6 +197,8 @@ strong
 
 .section
   padding: $section-padding
+  &.is-medium
+    padding: $section-padding-medium
   &.is-large
     padding: $section-padding-large
   &.section-image-container
@@ -228,7 +235,16 @@ strong
 footer
   // background-color: $footer-background-color
   font-size: 1rem
-  padding: 10rem $navbar-height 3rem
+  padding: 3rem $navbar-height
 
 .center-align
   text-align: center
+
+.no-padding-lr
+  padding-left: 0 !important
+  padding-right: 0 !important
+
+.inline-list
+  margin: 3rem 0 0
+  display: flex;
+  justify-content: space-between;

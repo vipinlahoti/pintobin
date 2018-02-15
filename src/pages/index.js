@@ -67,6 +67,36 @@ const IndexPage = () => (
       </div>
     </section>
 
+    <section className="section is-medium no-padding-lr">
+      <div className="columns">
+        <div className="column is-two-thirds">
+          <div className="box is-medium">
+            <div>
+              <h3 className="subtitle">Get in Touch</h3>
+              <p>Typesetting industry. Lorem Ipsum has been the industry's standard.</p>
+              <div className="inline-list">
+                <div>
+                  <h4>Where to find us</h4>
+                  <ul>
+                    <li>101, Garden View Apartments,</li>
+                    <li>1st C Cross, varsova layout, Kaggadasapura</li>
+                    <li>Bengaluru, Karnataka 560093</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4>Contact us</h4>
+                  <ul>
+                    <li><a href="mailto:hello@pintobin.in">hello@pintobin.in</a></li>
+                    <li>+91 869 132 3603</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </div>
 )
 
